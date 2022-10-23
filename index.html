@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Photo Theme</title>
+  </head>
+  <body>
+    <!--TODO: Navigation -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="3" class="navbar-brand text-danger fw-bolder">
+          <i class="bi bi-camera"></i>
+          iShot
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          data-bs-controls="navbar"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="#Experience" class="nav-link">Experience</a>
+            <a href="#Portfolio" class="nav-link">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--TODO: Header -->
+
+    <header
+      class="row row-cols-2 vh-100 flex-row align-items-center justify-content-center"
+    >
+      <div
+        class="col-sm-6 container text-center text-sm-start"
+        style="width: 500px;"
+      >
+        <div class="card-header bg-white font-monospace text-secondary">
+          PHOTOGRAPHER
+        </div>
+        <div class="card-body">
+          <h5 class="card-title display-1 fw-bold">
+            Shotting your Memories.
+          </h5>
+          <p class="card-text text-scondary mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci,
+            molestiae unde blanditiis inventore odio amet, molestias illum ad
+            animi omnis repellendus dolorum labore quas quam tempora, tenetur
+            voluptas maiores ut.
+          </p>
+          <div class="d-flex flex-sm-row flex-column mt-4">
+            <button
+              class="btn btn-danger btn-lg shadow"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#email"
+            >
+              <i class="bi bi-envelope"></i>
+              Email Me Here
+            </button>
+            <span class="fs-2 mt-5 mt-sm-0">
+              <a href="#">
+                <i class="bi bi-facebook text-dark ms-sm-5 sm-2"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-twitter text-dark ms-sm-5 sm-2"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center container">
+        <div class="card border-0">
+          <i class="bi bi-instagram text-danger display-1"></i>
+          <h6 class="text-muted mt-4">Check out my</h6>
+          <a href="#" class="text-decoration-none" target="_blank">
+            INSTAGRAM
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <!--TODO: Header>FORM -->
+      <div class="modal fade" id="email" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title">Book A shoot</div>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="#" class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="samaneh"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Karimi"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="1234 Main str."
+                  />
+                </div>
+
+                <div class="col-12">
+                  <label for="" class="form-label">Address 2</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Shoot Location:Apartmant,studio,of floor"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="" class="form-label">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Shoot Your City"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">State</label>
+                  <select type="text" class="form-select" placeholder="">
+                    <option selected>Choose...</option>
+                    <option value="">state 1 ..</option>
+                    <option value="">state 2 ..</option>
+                    <option value="">state 3 ..</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label class="form-label">Zip</label>
+                  <input type="text" class="form-control" placeholder="Zip " />
+                </div>
+                <div class="col-12">
+                  <a
+                    href="#"
+                    class="text-link"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#terms-services"
+                  >
+                    Terms of Service.
+                  </a>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" />
+                    <label class="form-check-label">I Agree</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100 disabled">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--TODO: Header>FORM>TERMS OF SERVICE -->
+      <div
+        class="modal fade"
+        id="terms-services"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Terms of Services</h5>
+              <button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+              optio nam molestiae maiores adipisci. Vel libero, in, possimus eum
+              tenetur optio, architecto inventore explicabo delectus laborum ad
+              temporibus similique iste nostrum aspernatur ab cum reiciendis
+              adipisci eligendi dolorum corrupti facilis iure ipsa. Consectetur
+              ipsa dolorem velit id mollitia! Officia, explicabo! Molestias
+              consequuntur voluptatum exercitationem quas ea, consectetur, quia
+              nisi aliquid beatae, alias mollitia? Voluptates doloremque eum
+              similique pariatur dolor beatae nobis ipsum, minus suscipit rem.
+              Labore minus officia voluptates itaque assumenda. Iure autem odio
+              voluptate quis molestias architecto maxime dolorum sapiente enim
+              hic facilis repellendus, delectus eveniet sed! Ipsum consequatur
+              cupiditate assumenda voluptatibus soluta aliquid quidem. Magnam
+              culpa minima fugiat, voluptate officia voluptatem quam facilis
+              esse commodi ratione mollitia quidem quia quaerat delectus non
+              optio tempora vero molestias asperiores ad impedit repellendus!
+              Sint itaque dignissimos labore eaque nulla sed harum consequatur
+              consectetur, omnis saepe sit nihil explicabo commodi delectus.
+              Nostrum tempore harum odit, similique provident ut blanditiis odio
+              necessitatibus, autem placeat officiis ex nobis vel ipsa explicabo
+              quibusdam. Reiciendis ad, atque repellendus necessitatibus
+              corrupti dolorem voluptate quae illo, accusamus ullam tempora
+              consequuntur adipisci eius excepturi possimus reprehenderit
+              laboriosam consequatur sunt nulla placeat consectetur iusto.
+              Officiis, ea modi assumenda maiores corrupti rerum alias libero
+              distinctio temporibus suscipit dolores incidunt quo et ex,
+              molestias dolor quisquam aperiam accusamus quos fugiat numquam!
+              Magni iste magnam at. Quae, ipsa. Nostrum sapiente repellendus
+              laborum veritatis tempore. A esse facere laudantium nostrum nam
+              necessitatibus fuga assumenda corrupti sint est? Dolorum alias
+              recusandae quisquam provident iste tenetur voluptatibus, qui
+              aliquid amet aperiam possimus labore, ducimus minima ut maiores
+              rem blanditiis accusamus corporis veritatis culpa nulla. Totam
+              enim quidem, deserunt magnam quas impedit reprehenderit deleniti
+              iusto consequuntur ea necessitatibus animi saepe iste aliquam eum
+              architecto. Suscipit quisquam eveniet dicta quo aliquid cumque
+              laborum, adipisci eius dolores alias, rem reprehenderit ea quidem
+              facere minus fugiat. Magni libero tenetur natus ab unde, iste modi
+              corrupti repellendus quas culpa consequatur molestias at illo
+              reprehenderit. Quam consectetur assumenda iure voluptate? Ipsum
+              esse tempore recusandae, unde ut dicta quod quae quibusdam
+              deserunt tempora assumenda ullam consequatur beatae eius animi
+              explicabo, consectetur doloremque? Praesentium modi, officiis
+              necessitatibus perferendis est sed explicabo dicta dignissimos
+              assumenda obcaecati at nesciunt! Deserunt reiciendis nihil
+              repellat velit iste eum ab nostrum sapiente ut iusto saepe aut
+              nobis consequatur culpa, aliquid dolores ad quaerat voluptatibus
+              similique cumque alias ea error! Et officia distinctio laboriosam
+              deserunt hic molestias quod harum fuga ut eveniet alias vitae
+              quidem, id a magnam laudantium libero quas aliquam! Vitae
+              laudantium consequatur et autem facilis deleniti esse accusamus?
+              Harum rerum, cupiditate temporibus, officiis voluptates ipsam hic,
+              illum quos blanditiis ratione nisi impedit quia unde. Culpa
+              cupiditate fuga officia quam fugiat perspiciatis, impedit totam
+              iure quisquam est magnam nesciunt adipisci ut mollitia sint
+              deserunt aperiam, illum consequatur iste ducimus minus numquam.
+              Labore fugit possimus ullam inventore excepturi magni quaerat
+              officiis rem vel in nostrum quidem porro unde incidunt maiores
+              eaque est ipsa velit consectetur, laborum ipsum animi repudiandae?
+              Repellendus numquam beatae ducimus excepturi ab natus, quia
+              aspernatur sequi!
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--TODO: MAIN -->
+    <main>
+      <!--TODO: MAIN> EXPERIENCE -->
+      <section
+        id="Experience"
+        class="row flex-row bg-light align-items-center justify-content-around pb-5"
+      >
+        <!--TODO: MAIN> EXPERIENCE > TITLE -->
+        <div
+          class="col-sm-6 mt-5 text-center text-sm-start mb-5"
+          style="width: 500px;"
+        >
+          <div class="card-header bg-light fint-monospace text-scondary">
+            EXPERIENCE
+          </div>
+          <div class="card-body">
+            <h5 class="card-title display-1 fw-bold">
+              I have been capturing memories for the last 10 years.
+            </h5>
+            <p class="card-text text-secondary mt-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+              odit placeat. Accusantium non qui similique facilis asperiores
+              sequi omnis fugit tenetur! Voluptas quae facere expedita
+              praesentium porro earum nisi ullam?
+            </p>
+          </div>
+        </div>
+
+        <!--TODO: MAIN> EXPERIENCE > PHOTOS  -->
+        <div class="col-sm-6">
+          <div
+            class="row gy-5 row-cols-1 row-cols-md-2 text-center text-sm-start mx-5 mx-sm-0"
+          >
+            <!--TODO: MAIN> EXPERIENCE > PHOTOS >PORTRAIT -->
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-body">
+                  <i class="bi bi-camera fs-3 text-danger"></i>
+                  <h5 class="card-title">Portrait Photos</h5>
+                  <p class="card-text">
+                    Sit nihil iste laborum expedita illo, harum autem quaerat
+                    tenetur.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-danger"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#portrait-photos"
+                  >
+                    View Photos
+                  </a>
+                  <!-- todo:portraite modal -->
+                  <div
+                    class="modal fade"
+                    id="portrait-photos"
+                    aria-hidden="true"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-center">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title">portrait photos</div>
+                          <button
+                            class="btn-close"
+                            type="button"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <!-- todo:portraite carosal -->
+
+                          <div
+                            class="carousel slide"
+                            id="portrait-photosCap"
+                            data-bs-ride="carousel"
+                          >
+                            <div class="carousel-indicators">
+                              <button
+                                class="active"
+                                type="button"
+                                data-bs-target="portrait-photosCap"
+                                data-bs-slide-to="0"
+                                aria-current="true"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="portrait-photosCap"
+                                data-bs-slide-to="1"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="portrait-photosCap"
+                                data-bs-slide-to="2"
+                              ></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img
+                                  src="./img/portraite/9.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/portraite/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/portraite/linkedin-sales-solutions-wS73LE0GnKs-unsplash.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="carousel-control-prev"
+                                data-bs-target="#portrait-photosCap"
+                                data-bs-slide="prev"
+                              >
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button
+                                type="button"
+                                class="carousel-control-next"
+                                data-bs-target="#portrait-photosCap"
+                                data-bs-slide="next"
+                              >
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              class="btn btn-danger"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--TODO: MAIN> EXPERIENCE > PHOTOS >TRAVEL -->
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-body">
+                  <i class="bi bi-camera2 fs-3 text-danger"></i>
+                  <h5 class="card-title">Travel Blog</h5>
+                  <p class="card-text">
+                    suscipit esse reiciendis odio cumque molestiae nesciunt, ex
+                    sit ea rem. Dolorum.
+                  </p>
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#travel-photos"
+                  >
+                    View Photos
+                  </a>
+
+                  <div
+                    class="modal fade"
+                    aria-hidden="true"
+                    id="travel-photos"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Travel Photos</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="carousel slide"
+                            id="travel-photosCap"
+                            data-bs-ride="carousel"
+                          >
+                            <div class="carousel-indicators">
+                              <button
+                                class="active"
+                                type="button"
+                                data-bs-target="#travel-photosCap"
+                                data-bs-slide-to="0"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="travel-photosCap"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="travel-photosCap"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                              ></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img
+                                  src="./img//travel/101.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/travel/102.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/travel/tamara-bellis-68csPWTnafo-unsplash.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="carousel-control-prev"
+                                data-bs-target="#travel-photosCap"
+                                data-bs-slide="prev"
+                              >
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button
+                                type="button"
+                                class="carousel-control-next"
+                                data-bs-target="#travel-photosCap"
+                                data-bs-slide="next"
+                              >
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--TODO: MAIN> EXPERIENCE > PHOTOS >WEDDING -->
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-body">
+                  <i class="bi bi-camera2 fs-3 text-danger"></i>
+                  <h5 class="card-title">Wedding Blog</h5>
+                  <p class="card-text">
+                    suscipit esse reiciendis odio cumque molestiae nesciunt, ex
+                    sit ea rem. Dolorum.
+                  </p>
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Wedding-photos"
+                  >
+                    View Photos
+                  </a>
+
+                  <div
+                    class="modal fade"
+                    aria-hidden="true"
+                    id="Wedding-photos"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Travel Photos</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="carousel slide"
+                            id="Wedding-photosCap"
+                            data-bs-ride="carousel"
+                          >
+                            <div class="carousel-indicators">
+                              <button
+                                class="active"
+                                type="button"
+                                data-bs-target="#Wedding-photosCap"
+                                data-bs-slide-to="0"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="Wedding-photosCap"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="Wedding-photosCap"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                              ></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img
+                                  src="./img/Wedding/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/Wedding/201.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/Wedding/202.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="carousel-control-prev"
+                                data-bs-target="#Wedding-photosCap"
+                                data-bs-slide="prev"
+                              >
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button
+                                type="button"
+                                class="carousel-control-next"
+                                data-bs-target="#Wedding-photosCap"
+                                data-bs-slide="next"
+                              >
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--TODO: MAIN> EXPERIENCE > PHOTOS >NETURE -->
+            <div class="col">
+              <div class="card shadow">
+                <div class="card-body">
+                  <i class="bi bi-camera-video fs-3 text-danger"></i>
+                  <h5 class="card-title">Neture Blog</h5>
+                  <p class="card-text">
+                    suscipit esse reiciendis odio cumque molestiae nesciunt, ex
+                    sit ea rem. Dolorum.
+                  </p>
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Neture-photos"
+                  >
+                    View Photos
+                  </a>
+
+                  <div
+                    class="modal fade"
+                    aria-hidden="true"
+                    id="Neture-photos"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Travel Photos</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div
+                            class="carousel slide"
+                            id="Neture-photosCap"
+                            data-bs-ride="carousel"
+                          >
+                            <div class="carousel-indicators">
+                              <button
+                                class="active"
+                                type="button"
+                                data-bs-target="#Neture-photosCap"
+                                data-bs-slide-to="0"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="Neture-photosCap"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                              ></button>
+                              <button
+                                type="button"
+                                data-bs-target="Neture-photosCap"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                              ></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img
+                                  src="./img/Neture/301.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/Neture/302.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img
+                                  src="./img/Neture/303.jpg"
+                                  alt="..."
+                                  class="d-block w-100"
+                                />
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Nesciunt ratione unde id
+                                    nemo natus .
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="carousel-control-prev"
+                                data-bs-target="#Neture-photosCap"
+                                data-bs-slide="prev"
+                              >
+                                <span class="carousel-control-prev-icon"></span>
+                              </button>
+                              <button
+                                type="button"
+                                class="carousel-control-next"
+                                data-bs-target="#Neture-photosCap"
+                                data-bs-slide="next"
+                              >
+                                <span class="carousel-control-next-icon"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--TODO:MAIN> PORTFOLIO -->
+      <section id="Portfolio" class="row mx-5">
+        <!--TODO: MAIN> PORTFOLIO > TITLE -->
+        <div
+          class="col-12 mt-5 text-center text-sm-start mb-5"
+          style="width: 500px;"
+        >
+          <div class="card-header bg-white fint-monospace text-scondary">
+            PORTFOLIO
+          </div>
+          <div class="card-body">
+            <h5 class="card-title display-1 fw-bold">Take a look at my Work</h5>
+            <p class="card-text text-secondary mt-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
+              odit placeat.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 my-5">
+          <div
+            class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-center text-center text-sm-start"
+          >
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/Neture/301.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/portraite/9.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/travel/102.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/Wedding/202.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/Neture/303.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img src="./img/travel/101.jpg" alt="" />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img
+                  src="./img/Wedding/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img
+                  src="./img/portraite/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-dark text-white">
+                <img
+                  src="./img/Neture/foodiesfeed.com_man-grilling-sausages.jpg"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <div class="card-title">Card Title</div>
+                  <p class="card-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--TODO: FOOTER -->
+    <footer class="text-center bg-dark text-light p-5">
+      <p class="fw-light">&copy; samaneh karimi 2022.All rights reserved.</p>
+      <div class="flex-row fs-4">
+        <i class="bi bi-facebook p-2"></i>
+        <i class="bi bi-inatagram p-2"></i>
+        <i class="bi bi-twitter p-2"></i>
+        <i class="bi bi-github p-2"></i>
+      </div>
+    </footer>
+
+    <!--
+         script
+     -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
